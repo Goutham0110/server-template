@@ -9,4 +9,10 @@ export class AuthController {
         })
     }
 
+    logout = async (req: Request, res: Response) => {
+        return res.status(httpStatus.OK).json({
+            message: "Logged Out"
+        })
+    }
+
 }
