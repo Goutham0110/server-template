@@ -24,10 +24,5 @@ router.use('/auth', authRouter);
 
 router.use(authMiddleware.verifyUser);
 
-router.post('/user', (req, res) => {
-    return res.status(httpStatus.OK).json({
-        message: "I am user"
-    })
-});
 
 export default router;
